@@ -27,6 +27,12 @@ const router = createRouter({
       name: 'jobsDetails',
       // route level code-splitting
       component: () => import('../views/Jobs/JobDetails.vue')
+    },
+
+    // Redirect
+    {
+      path: '/all-jobs',
+      redirect: '/jobspage'
     }
   ]
 })
