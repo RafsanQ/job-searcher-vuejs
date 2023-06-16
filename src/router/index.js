@@ -33,6 +33,13 @@ const router = createRouter({
     {
       path: '/all-jobs',
       redirect: '/jobspage'
+    },
+
+    // Catchall 404
+    {
+      path: '/:catchall(.*)',
+      name: 'NotFound',
+      component: () => import('../views/NotFound.vue')
     }
   ]
 })

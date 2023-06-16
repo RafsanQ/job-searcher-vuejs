@@ -1,7 +1,9 @@
 <template>
     <h1>Jobs Page</h1>
-    <div v-for="job in jobs" :key="job.id">
-        <RouterLink :to="{ name: 'jobsDetails', params: { id: job.id }}">{{ job.title }}</RouterLink>
+    <div v-for="job in jobs" :key="job.id" class="jobList">
+        <RouterLink :to="{ name: 'jobsDetails', params: { id: job.id }}">
+            <h1>{{ job.title }}</h1>    
+        </RouterLink>
     </div>
 </template>
 
@@ -23,6 +25,20 @@
 </script>
 
 
-<style>
-
+<style scoped>
+    h2{
+        background: #909090;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 10px auto;
+        max-width: 600px;
+        cursor: pointer;
+        color: #444;
+    }
+    h2:hover {
+        background: #1a1a1a;
+    }
+    a{
+        text-decoration: none;
+    }
 </style>
