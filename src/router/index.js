@@ -7,7 +7,7 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: HomeView
+      component: () => import('../views/HomeView.vue')
     },
     {
       path: '/about',
@@ -21,7 +21,7 @@ const router = createRouter({
       path: '/jobspage',
       name: 'jobspage',
       // route level code-splitting
-      
+      component: () => import('../views/JobsPage.vue')
     }
   ]
 })

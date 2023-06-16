@@ -10,6 +10,7 @@ import { RouterLink, RouterView } from 'vue-router'
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/jobspage">Jobs</RouterLink>
       </nav>
     </div>
   </header>
@@ -50,9 +51,6 @@ nav a.router-link-exact-active {
   background: crimson;
 }
 
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
 
 nav a {
   display: inline-block;
